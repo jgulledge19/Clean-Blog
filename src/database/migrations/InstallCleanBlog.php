@@ -801,6 +801,7 @@ class InstallCleanBlog extends Migrations
                     ->setFieldParentFromAlias($data['parent'])
                     ->setFieldMenuindex($data['menuindex'])
                     ->setFieldPublished(true)
+                    ->setFieldContent($data['content'])
                     ->setFieldClassKey($data['class_key']) // CollectionContainer | modDocument
                     ->setFieldContextKey('web')
                     ->setFieldTemplate($data['template'])
