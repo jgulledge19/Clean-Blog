@@ -22,8 +22,8 @@ if (count($parents)) {
 }
 $query->sortBy('publishedon', 'DESC');
 
-$query->limit($limit, $offset);
 $total = $modx->getCount('modResource', $query);
+$query->limit($limit, $offset);
 
 $resources = $modx->getIterator('modResource', $query);
 
