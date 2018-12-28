@@ -919,6 +919,21 @@ class InstallCleanBlog extends Migrations
     }
 
     /**
+     * @param array $names
+     * @return string
+     */
+    protected function getTemplateIDsFromNames(array $names)
+    {
+        $ids = [];
+        $templates = $this->modx->getCollection('modTemplate', ['templatename:IN' => $names]);
+        foreach ($templates as $template) {
+            $ids[] = $template->get('id');
+        }
+
+        return implode(',', $ids);
+    }
+
+    /**
      * @param \LCI\Blend\Blendable\Blendable $blendableObject
      * @param $name
      */
