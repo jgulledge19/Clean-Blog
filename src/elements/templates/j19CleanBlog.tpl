@@ -50,11 +50,11 @@
 
         <!-- Pager -->
         <div class="clearfix">
-          [[+paginator.previous:notempty=`
-          <a class="btn btn-primary float-left" href="[[~[[++j19Clean.blog]]? &page=`[[+paginator.previous]]` &limit=`[[+paginator.limit]]` ]]">Previous Posts &larr;</a>`
+          [[!+paginator.previous:notempty=`
+          <a class="btn btn-primary float-left" href="[[~[[++j19Clean.blog]]? &page=`[[!+paginator.previous]]` &limit=`[[!+paginator.limit]]` ]]">Previous Posts &larr;</a>`
           ]]
-          [[+paginator.next:notempty=`
-          <a class="btn btn-primary float-right" href="[[~[[++j19Clean.blog]]? &page=`[[+paginator.next]]` &limit=`[[+paginator.limit]]` ]]">Older Posts &rarr;</a>`]]
+          [[!+paginator.next:notempty=`
+          <a class="btn btn-primary float-right" href="[[~[[++j19Clean.blog]]? &page=`[[!+paginator.next]]` &limit=`[[!+paginator.limit]]` ]]">Older Posts &rarr;</a>`]]
         </div>
       </div>
     </div>

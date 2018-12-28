@@ -22,6 +22,9 @@ if (count($parents)) {
 }
 $query->sortBy('publishedon', 'DESC');
 
+$query->limit($limit, $offset);
+$total = $modx->getCount('modResource', $query);
+
 $resources = $modx->getIterator('modResource', $query);
 
 /** @var Stockpile $stockpile */
@@ -31,8 +34,6 @@ $stockpile = new Stockpile($modx);
 foreach ($resources as $resource) {
     $posts .= $modx->getChunk($chunk, $stockpile->getResource($resource->get('id')));
 }
-
-$total = $modx->getCount('modResource', $query);
 
 $modx->toPlaceholders([
         'posts' => $posts,
