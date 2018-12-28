@@ -54,7 +54,7 @@ Read about [MODX Chunks](https://docs.modx.com/revolution/2.x/making-sites-with-
 ### Snippets
  
 | Name | Description |
-| --- | --- | --- | 
+| --- | --- | 
 | [j19CleanPaginator](src/elements/snippets/j19CleanPaginator.php) | Paginates blog posts |
 
 ### Templates
@@ -91,7 +91,7 @@ Read about [MODX Template Variables](https://docs.modx.com/revolution/2.x/making
 | j19Clean.blog | Resource ID of blog collection page for navigation |
 | j19Clean.contact | Resource ID of contact page for navigation |
 
-### Update Blog code
+### Update Blog CSS code from source
 
 ```
 $ rm -rf assets/templates/j19/clean/
