@@ -84,7 +84,7 @@ class InstallCleanBlog extends Migrations
     /** @var array  */
     protected $collections = [
         // name => column_data
-        'Documents' => [
+        'Blog Posts' => [
             'description' => 'Blog Posts',
             //'child_resource_type' => 'modStaticResource',
             'global_template' => 0,
@@ -305,7 +305,7 @@ class InstallCleanBlog extends Migrations
             ]
         ],
         'j19CleanContact' => [
-            'name' => 'j19CleanBlog',
+            'name' => 'j19CleanContact',
             'categories' => 'j19=>Clean',
             'description' => 'Contact Form',
             'tvs' => [
