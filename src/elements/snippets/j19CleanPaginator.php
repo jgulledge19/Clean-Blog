@@ -39,7 +39,7 @@ $modx->toPlaceholders([
         'posts' => $posts,
         'offset' => $offset,
         'limit' => $limit,
-        'previous' => ($page - 1 < 0 ? '' : $page - 1),
+        'previous' => ($page - 1 <= 0 ? '' : $page - 1),
         'next' => ($total > $page * $limit ? $page + 1 : '')
     ],
     $prefix
