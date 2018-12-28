@@ -21,7 +21,7 @@ A [clean Bootstrap blog theme](https://github.com/BlackrockDigital/startbootstra
     "repositories": [
        {
          "type": "vcs",
-         "url": "https://github.com/LippertComponents/MenuBuilder"
+         "url": "https://github.com/jgulledge19/Clean-Blog"
        }
      ], 
   ```
