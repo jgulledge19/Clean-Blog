@@ -8,7 +8,7 @@
             [[+tv.j19CleanSubheading]]
         </h3>
         `]]
-        [[+introtext:notempty=`<p>[[+introtext]]</p>]]
+        [[+introtext:notempty=`<p>[[+introtext]]</p>`]]
     </a>
     <p class="post-meta">Posted on [[+publishedon:strtotime:date=`%A %B %d, %Y`]]</p>
 </div>
