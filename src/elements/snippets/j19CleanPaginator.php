@@ -16,9 +16,9 @@ $offset = ($offset < 0 ? 0 : $offset * $limit);
 
 $posts = '';
 
-$query = $modx->newQuery('modResource');
+$query = $modx->newQuery('modResource', ['published' => 1]);
 if (count($parents)) {
-    $query->where(['parents:IN' => $parents]);
+    $query->where(['parent:IN' => $parents]);
 }
 $query->sortBy('publishedon', 'DESC');
 
@@ -29,9 +29,7 @@ $stockpile = new Stockpile($modx);
 
 /** @var modResource $resource */
 foreach ($resources as $resource) {
-    $posts .= $modx->getChunk($chunk, [
-        $resources->getResource($resource->get('id'))
-        ]);
+    $posts .= $modx->getChunk($chunk, $stockpile->getResource($resource->get('id')));
 }
 
 $total = $modx->getCount('modResource', $query);
