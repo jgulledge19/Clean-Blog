@@ -1,0 +1,20 @@
+{
+  "name": "joshua19/modx-clean-blog",
+  "description": "All MODX elements and resources to create a Blog website using: .",
+  "authors": [
+
+  ],
+  "autoload": {
+    "psr-4": {
+      "Joshua19\\MODX\\CleanBlog\\": "src/"
+    }
+  },
+  "require": {
+    "php" : ">=7.1.0",
+    "ext-json": "*",
+    "lci/orchestrator": "^1.0.0",
+    "lci/stockpile": "^1.0.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
